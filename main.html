@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudit Nagpal | Web Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home" class="logo">Mudit Nagpal</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="tech (1).pdf" target="_blank" class="resume-btn">Tech Resume</a></li>
+            <li><a href="tech (2).pdf" target="_blank" class="resume-btn">Non-Tech Resume</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Mudit Nagpal</h1>
+            <p class="subtitle">A Passionate <span id="typing-effect"></span></p>
+            <p class="description">I love to build digital experiences that merge creativity with technology. Let's build something amazing together!</p>
+            <a href="#contact" class="btn">Let's Connect <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-image">
+            <img src="Mudit Nagpal.png" alt="Mudit Nagpal Profile" class="profile-img">
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <section id="about" class="about-me content-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>I'm a dedicated and enthusiastic developer with a strong foundation in both front-end and back-end technologies. My journey in tech is driven by a curiosity to solve problems and a desire to create beautiful, functional applications. I thrive in collaborative environments and am always eager to learn new skills.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills content-section">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Front End</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-server"></i>
+                <h3>Back End</h3>
+                <p>PHP, Java</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database</h3>
+                <p>MySQL</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Creative Thinking</h3>
+                <p>Innovative problem-solving and design</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects content-section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <i class="fas fa-music"></i>
+                <h3>Music Player Web App</h3>
+                <p>A dynamic music player built with HTML, CSS, and JavaScript with core playlist features.</p>
+                <a href="https://github.com/Mudit-Nagpal/MUSIC-PLAYER3" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-robot"></i>
+                <h3>Hospital Insurance Chatbot</h3>
+                <p>A Java Swing chatbot with insurance details, verification, and certificate generation.</p>
+                <a href="https://github.com/Mudit-Nagpal/Hospital-Management-system1" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>Santosh Box Manufacturers</h3>
+                <p>A responsive business website built with HTML, CSS, and JavaScript.</p>
+                <a href="https://santosh-box-manufacturers-htdu.vercel.app/" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="certificates content-section">
+        <h2 class="section-title">My Certifications</h2>
+        <div class="certificates-grid">
+            <div class="certificate-card">
+                <img src="Digimantra.jpg" alt="Software Development - DigiMantra">
+                <p>Software Development Internship - Digimantra Labs</p>
+            </div>
+            <div class="certificate-card">
+                <img src="Hackathon.jpg" alt="Hackathon Certificate">
+                <p>Participation - Hackathon 2.0 PCTE</p>
+            </div>
+            <div class="certificate-card">
+                <img src="GNE.png" alt="Digital Poster Creation Certificate">
+                <p>Participation – Digital Poster Creation, GNE ACME 2024</p>
+            </div>
+             <div class="certificate-card">
+                <img src="basic.png" alt="Computer Basics Certificate">
+                <p>3-Month Certified Course in MS Office & Tally</p>
+            </div>
+            <div class="certificate-card">
+                <img src="appreciation.jpg" alt="Appreciation Certificate">
+                <p>Appreciation for Organizing Hackathon 3.0</p>
+            </div>
+            <div class="certificate-card">
+                <img src="SQL.png" alt="SQL Certificate"> 
+                <p>1-Month Certified Course in MySQL Database</p>
+            </div>
+        </div>
+    </section>
+    
+    <div id="certificateModal" class="modal">
+        <span class="modal-close" aria-label="Close certificate modal">&times;</span>
+        <img id="modalImage" class="modal-content" src="" alt="Certificate Full View">
+    </div>
+
+    <section id="contact" class="contact content-section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <p>I'm currently open to new opportunities. Feel free to reach out!</p>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i><a href="tel:+919465640288">+91 9465640288</a></p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:muditnagpal17@gmail.com">muditnagpal17@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+          
+            <a href="mailto:muditnagpal17@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/Mudit-Nagpal" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mudit-nagpal-644187304" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/muditnagpal17/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 Mudit Nagpal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
